@@ -9,7 +9,7 @@
 
     <body>
         <header>
-            <h1> <img src="images/logo.png"> TIENDA OFICIAL DE TECNOLOGIA ONLINE </h1>
+            <h1> <img src="images/logo.png"> <i> TIENDA OFICIAL DE TECNOLOGIA ONLINE </i> </h1>
             <nav> 
                 <table>
                     <th>
@@ -27,23 +27,23 @@
             <div>
                 <table>
                     <tr>
-                        <td> <img src="images/producto1.1.png" title="IPHONE 13 PRO MAX" id="p11"> </td>
-                        <td> <img src="images/producto2.1.png" title="SAMSUNG S22 ULTRA" id="p21"> </td>
-                        <td> <img src="images/producto3.1.png" title="HUAWEI P50 PRO" id="p31"> </td>
+                        <td id="ti"> <img src="images/producto1.1.png" title="IPHONE 13 PRO MAX" id="p11"> </td>
+                        <td id="ti"> <img src="images/producto2.1.png" title="SAMSUNG S22 ULTRA" id="p21"> </td>
+                        <td id="ti"> <img src="images/producto3.1.png" title="HUAWEI P50 PRO" id="p31"> </td>
                     </tr>
 
                     <tr>
-                        <td> 
+                        <td id="ti"> 
                             $809999.00 
                             <br>
                             <b> 5% off </b>
                         </td>
-                        <td> 
+                        <td id="ti"> 
                             $331999.00
                             <br>
                             <b> 10% off </b>
                         </td>
-                        <td> 
+                        <td id="ti"> 
                             $299999.00
                             <br>
                             <b> 15% off </b>
@@ -51,7 +51,7 @@
                     </tr>
 
                     <tr>
-                        <td> 
+                        <td id="ti"> 
                             <li> Pantalla: Super Retina XDR 6,7 pulgadas. 
                                  ProMotion 120 Hz 2.778 x 1.284 px, 458 ppp 1.000 nits, contraste 2.000.000:1 </li>
                             <li> Procesador: Apple A15 Bionic </li>
@@ -61,7 +61,7 @@
                                  Principal: 12 MP f/1.5, 1,9um. </li>
                             <li> Camara Frontal: 12 MP f/2.2 </li>
                         </td>
-                        <td> 
+                        <td id="ti"> 
                             <li> Pantalla: AMOLED de 6,8 pulgadas.
                                  Resolución QHD+ a 3.080 x 1.440.
                                  Refresco adaptativo de 1 a 120Hz.
@@ -79,7 +79,7 @@
                                  Zoom: 10 megapíxeles f/4.9 OIS 10X 230mm. </li>
                             <li> Camara Frontal: 40 megapíxeles f/2.2 25mm </li>
                         </td>
-                        <td> 
+                        <td id="ti"> 
                             <li> Pantalla: 6,6 pulgadas OLED 120 Hz, FHD+ (1.228 x 2.700 píxeles) </li>
                             <li> Procesador: Snapdragon 888 4G </li>
                             <li> Sistema operativo: Android 11 EMUI 12 </li>
@@ -116,7 +116,7 @@
             border: 2px solid black;
             height: 26px;
             text-align: center;
-            background-color: rgb(251, 235, 3);
+            background-color: rgb(217, 137, 201);
         }
 
         #up {
@@ -126,16 +126,22 @@
         }
 
         td {
-            border: 3px solid rgb(241, 64, 6);
+            border: 3px solid rgb(6, 182, 241);
             width: 33.3%;
             height: 30px;
             text-align: center;
-            background-color: blanchedalmond;
+            background-color: white;
+        }
+
+        #ti {
+            border: 3px solid rgb(68, 0, 255);
+            text-align: center;
+            background-color: rgb(175, 240, 255);
         }
 
         header {
-            border: 10px solid blueviolet;
-            background-color: rgb(168, 140, 104);
+            border: 10px solid rgb(86, 84, 87);
+            background-color: rgb(186, 168, 142);
         }
 
         #p11 {
