@@ -1,105 +1,124 @@
 <!DOCTYPE html>
 <html >
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Carrito de Compras </title>
     </head>
 
     <body>
-        <header>
-        </header>
+        <div id="contenedor">
+            <header>
+            </header>
 
-        <main>
+            <main>
 
-            <form action="servidor.html" method="POST">
-                <ul>
-                    <li>
-                        <label for="inNombre"> Nombre: </label>
-                        <input type="text" id="inNombre" placeholder="Matias" name="nombre_usuario" required>
-                    </li>
 
-                    <li>
-                        <label for="inApellido"> Apellido: </label>
-                        <input type="text" id="inApellido" placeholder="Dupont" name="apellido_usuario" required>
-                    </li>
+                <form action="servidor.html" method="POST">
+                    <h3 align="center" strong> FORMULARIO DE PAGO </h3>
+
+                    &nbsp;
+
+                    <ul>
+                        <h4 strong> Tarjetas de Credito </h4>
+
+                        <img src="images/American.png"> <input type="radio" name="tarjeta_pago"> 
+                        <img src="images/VISA.png"> <input type="radio" name="tarjeta_pago"> 
+                        <img src="images/Master.png"> <input type="radio" name="tarjeta_pago">
                         
-                    <li>
-                        <label for="inEmail"> Correo Electronico: </label>
-                        <input type="email" id="inEmail" name="email_usuario" placeholder="matiasn.dupont@gmail.com" required>
-                    </li>
+                        <li>
+                            <h4> ¿En cuantas cuotas desea realizar su compra? </h4>
 
-                    <li>
-                        <label for="chkListaMail"> Quiero recibir ofertas por email </label>
-                        <input type="checkbox" id="chkListaMail" name="ofertas_mail">
-                    </li>
+                            &nbsp;
+
+                            <label for="op_3"> 3 </label>
+                            <input type="radio" name="opcion_pago" value="3" id="op_3">
+                            
+                            <label for="op_3"> 6 </label>
+                            <input type="radio" name="opcion_pago" value="6" id="op_6">
+                            
+                            <label for="op_3"> 12 </label>
+                            <input type="radio" name="opcion_pago" value="12" id="op_12">
+
+                            <label for="op_3"> 18 </label>
+                            <input type="radio" name="opcion_pago" value="12" id="op_12">
+                        </li>
+
+                        <li>
+                            <label for="inTitular"> Nombre del titular: </label>
+                            <input type="text" id="inTitular" name="nombre_usuario" required>
+                        </li>
+
+                        <li>
+                            <label for="inTarjeta"> Nro. de Tarjeta: </label>
+                            <input type="number" id="inTarjeta" name="tarjeta_usuario" minlength="16" maxlength="16" required>
+                        </li>
+
+                        <li>
+                            <label for="inCodigo"> Codigo de seguridad: </label>
+                            <input type="password" id="inCodigo" name="codigo_usuario" maxlength="3" required>
+                        </li>
+
+                        <li>
+                            <label for="inTelefono"> Telefono de Contacto: </label>
+                            <input type="number" id="inTelefono" name="numero_usuario" maxlength="10" required>
+                        </li>
                         
-                    <li>
-                        <p> Tarjeta de pago: </p>
-                        <input type="radio" name="opcion_tarjeta" value="VISA" id="op_1">
-                        <label for="op_1"> VISA </label>
+                        <li>
+                            <label for="inMail"> Mail de Contacto: </label>
+                            <input type="email" id="inMail" name="mail_usuario" required>
+                        </li>
 
-                        <input type="radio" name="opcion_tarjeta" value="MC" id="op_2">
-                        <label for="op_2"> MASTERCARD </label>
+                        <li>
+                            <input type="checkbox" id="inCheckmail">
+                            <label for="inCheckmail"> Quiero recibir ofertas por mail </label>
+                        </li>
 
-                        <input type="radio" name="opcion_tarjeta" value="AE" id="op_3">
-                        <label for="op_3"> AMERICAN EXPRESS</label>
-                    </li>
+                        <h4>Datos de Envio: </h4>
+                        
+                        <li>
+                            <label for="inCodigoPostal"> Codigo Postal: </label>
+                            <input type="number" id="inCodigoPostal" name="codigo_postal" maxlength="5" required> 
+                        </li>
 
-                    <li>
-                        <p> Cantidad de cuotas? </p> 
-                        <label for="op_3"> 3 </label>
-                        <input type="radio" name="opcion_pago" value="3" id="op_3">
+                        <li>
+                            <label for="inDireccion"> Direccion: </label>
+                            <input type="text" id="inDireccion" name="direccion_usuario" required> 
+                        </li>
 
-                        <label for="op_6"> 6 </label>
-                        <input type="radio" name="opcion_pago" value="6" id="op_6">
+                        <li>
+                            <button type="submit"> Finalizar Compra </button>
+                            <button type="reset"> Restablecer </button>
+                        </li
 
-                        <label for="op_12"> 12 </label>
-                        <input type="radio" name="opcion_pago" value="12" id="op_12">
-                    </li>
+                        <img src="images/dell.png"> 
+                        <img src="images/samsung.png"> 
+                        <img src="images/apple.jpg"> 
+                        <img src="images/jbl.png"> 
+                        <img src="images/str.jpg"> 
+                        <img src="images/hp.png"> 
+                        <img src="images/huawei.png"> 
+                        <img src="images/sony.png"> 
+                    </ul>
+                </form>
 
-                    <li>
-                        <button type="submit"> Enviar </button>
-                    </li>
 
-                    <li>
-                        <button type="reset"> Restablecer </button>
-                    </li>
-                </ul>
-            </form>
-        </main>
+            </main>
 
-        <footer>
-            <p id="up"> 
-                Desarrollado por <b> Tomas Queheille </b> y <b> Matias Dupont </b> 
-                <br>
-                Contacto: <b> tomqueheille@gmail.com </b> y <b> matiasn.dupont@gmail.com </b>
-                <br>
-                Materia: <i> Laboratorio De Computacion II </i>
-                <br>
-                Fecha: <small> 05 de Octubre de 2022 </small>
-            </p>
-        </footer>
+            <footer>
+            </footer>
+
+        </div>
     </body>
-
     <style>
-        li {
+        li{
             margin: 20px;
-            list-style-type:none;
+            list-style-type: none;
         }
-
-        form {
-            border: 2px solid green;
-            width: 410px;
-            background-color: #8bbce6;
+        form{
+            position: relative;
+            top: 10px;
+            left: 750px;
+            border: 2px dashed rgb(238, 165, 81);
+            width: 300px;
+            background-color: rgb(247, 225, 197);
         }
-
-        #up {
-            border: 4px solid red;
-            text-align: center;
-            background-color: aquamarine;
-        }
-
     </style>
-</html> 
+</html>
