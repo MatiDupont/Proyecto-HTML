@@ -1,12 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Tienda Online </title>
+    </head>
+
+    <body>
+        <header>
+            <h1> <img src="images/logo.png"> <i> TIENDA OFICIAL DE TECNOLOGIA ONLINE </i> </h1>
+            <nav> 
+                <table>
+                    <th>
+                        <td> <a href="celulares.html"> CELULARES </a> </td>
+                        <td> <a href="computacion.html"> COMPUTACION </a> </td>
+                        <td> <a href="audio.html"> AUDIO </a> </td>
+                    </th>
+                </table>
+            </nav>
+        </header>
+
+        <br> 
+
+        <main>
+            <table>
+                <tr>
+                    <td> <img src="images/celulares.png" id="icl"> </td>
+                    <td> <img src="images/computacion.png" id="icp"> </td>
+                    <td> <img src="images/audio.png" id="ia"> </td>
+                </tr>
+            </table>
+
+            <div>
+                <h3 id="fp"> <a href="carrito_compras.html" title="Enlace al formulario de pago" target="_blank"> Carrito de compras </a> </h3>
+            </div>
+        </main>
+
+        <footer>
+            <p id="up"> 
+                Desarrollado por <b> Tomas Queheille </b> y <b> Matias Dupont </b> 
+                <br>
+                Contacto: <b> tomqueheille@gmail.com </b> y <b> matiasn.dupont@gmail.com </b>
+                <br>
+                Materia: <i> Laboratorio De Computacion II </i>
+                <br>
+                Fecha: <small> 05 de Octubre de 2022 </small>
+            </p>
+        </footer>
+    </body>
+
+    <style>
+        #fp {
+            border: 2px solid black;
+            height: 26px;
+            text-align: center;
+            background-color: rgb(217, 137, 201);
+            pointer-events: none;
+        }
+
+        #up {
+            border: 4px solid red;
+            text-align: center;
+            background-color: aquamarine;
+        }
+
+        td {
+            border: 3px solid rgb(6, 182, 241);
+            width: 33.3%;
+            height: 30px;
+            text-align: center;
+            background-color: white;
+        }
+
+        header {
+            border: 10px solid rgb(86, 84, 87);
+            background-color: rgb(186, 168, 142);
+        }
+
+        #ia {
+            width: 80%;
+            height: 470px;
+        }
+
+        #icp {
+            width: 80%;
+            height: 470px;
+        }
+
+        #icl {
+            width: 80%;
+            height: 470px;
+        }
+    </style>
 </html>
