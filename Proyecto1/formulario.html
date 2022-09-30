@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Formulario de pago </title>
+    </head>
+
+    <body>
+        <header>
+        </header>
+        
+        <main>
+
+            <form action="servidor.html" method="POST">
+                <h3 text-align="center"> FORMULARIO DE PAGO </h3>
+
+                &nbsp;
+
+                <ul>
+                    <h4> Tarjetas de Credito </h4>
+
+                    <img src="images/American.png"> <input type="radio" name="tarjeta_pago"> 
+                    <img src="images/VISA.png"> <input type="radio" name="tarjeta_pago"> 
+                    <img src="images/Master.png"> <input type="radio" name="tarjeta_pago">
+                        
+                    <li>
+                        <h4> ¿En cuantas cuotas desea realizar su compra? </h4>
+
+                        &nbsp;
+
+                        <label for="op_3"> 3 </label>
+                        <input type="radio" name="opcion_pago" value="3" id="op_3">
+                            
+                        <label for="op_3"> 6 </label>
+                        <input type="radio" name="opcion_pago" value="6" id="op_6">
+                            
+                        <label for="op_3"> 12 </label>
+                        <input type="radio" name="opcion_pago" value="12" id="op_12">
+
+                        <label for="op_3"> 18 </label>
+                        <input type="radio" name="opcion_pago" value="12" id="op_12">
+                    </li>
+
+                    <li>
+                        <label for="inTitular"> Nombre del titular: </label>
+                        <input type="text" id="inTitular" name="nombre_usuario" required>
+                    </li>
+
+                    <li>
+                        <label for="inTarjeta"> Nro. de Tarjeta: </label>
+                        <input type="number" id="inTarjeta" name="tarjeta_usuario" minlength="16" maxlength="16" required>
+                    </li>
+
+                    <li>
+                        <label for="inCodigo"> Codigo de seguridad: </label>
+                        <input type="password" id="inCodigo" name="codigo_usuario" maxlength="3" required>
+                    </li>
+
+                    <li>
+                        <label for="inTelefono"> Telefono de Contacto: </label>
+                        <input type="number" id="inTelefono" name="numero_usuario" maxlength="10" required>
+                    </li>
+                        
+                    <li>
+                        <label for="inMail"> Mail de Contacto: </label>
+                        <input type="email" id="inMail" name="mail_usuario" required>
+                    </li>
+
+                    <li>
+                        <input type="checkbox" id="inCheckmail">
+                        <label for="inCheckmail"> Quiero recibir ofertas por mail </label>
+                    </li>
+
+                    <h4> Datos de Envio: </h4>
+                        
+                    <li>
+                        <label for="inCodigoPostal"> Codigo Postal: </label>
+                        <input type="number" id="inCodigoPostal" name="codigo_postal" maxlength="5" required> 
+                    </li>
+
+                    <li>
+                        <label for="inDireccion"> Direccion: </label>
+                        <input type="text" id="inDireccion" name="direccion_usuario" required> 
+                    </li>
+
+                    <li>
+                        <button type="submit"> Finalizar Compra </button>
+                        <button type="reset"> Restablecer </button>
+                    </li>
+
+                    <img src="images/apple.jpg">  
+                    <img src="images/sony.png"> 
+                </ul>
+            </form>
+
+
+        </main>
+
+        <footer>
+        </footer>
+    </body>
+
+    <style>
+        li{
+            margin: 20px;
+        }
+        form{
+            border: 2px dashed rgb(238, 165, 81);
+            width: 300px;
+            background-color: rgb(247, 225, 197);
+        }
+    </style>
+</html>
